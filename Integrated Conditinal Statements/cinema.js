@@ -1,0 +1,21 @@
+function cinema(input){
+    let movieType = input[0];
+    let rows = Number(input[1]);
+    let columns = Number(input[2]);
+    let income = 0;
+
+
+    switch (movieType) {
+        case "Premiere":
+            income = rows * columns * 12.0;
+        break;
+        case "Normal":
+            income = rows * columns * 7.50;
+        break;
+        case "Discount":
+            income = rows * columns * 5.00;
+        break;
+
+    }
+    console.log(`${income.toFixed(2)} leva`);
+}
